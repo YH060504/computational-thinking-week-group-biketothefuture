@@ -3,7 +3,7 @@ def get_name():
 
 
 def paragrpah_one_felix():
-    return "Today ad 9 o'clock Yash Diana Eliana and Felix entred the  of Roeterseiland. This is their first day of uni."
+    return "Today ad 9 o'clock Yash Diana Eliana and Felix entered the  of Roeterseiland. This is their first day of uni."
 
 
 def paragrpah_five_felix():
