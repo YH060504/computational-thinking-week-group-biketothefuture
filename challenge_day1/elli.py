@@ -1,5 +1,7 @@
-def function_for_name():
-  return "Elli"
+def get_name():
+    return "Elli"
 
-get_name = function_for_name
-print(get_name)
+
+if __name__ == "__main__":
+    name = get_name()
+print(name)
