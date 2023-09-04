@@ -6,3 +6,6 @@ def paragraph2_diana():
 
 def paragraph6_diana():
   return f"After a verz nice introduction to the robot camp in the theater, everzone spread out to the sun. Felix, Yash, Elli and Diana joined other students and talked on the grass before another class started."
+
+def paragraph6_diana():
+  return f""
