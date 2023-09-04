@@ -1,2 +1,6 @@
-name = 'Felix Toutant'
-print(name)
+def full_name():
+
+    return "Felix Toutant"
+
+
+print(full_name())
