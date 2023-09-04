@@ -1,18 +1,15 @@
-from elli import get_name as get_name_elli
-from yash import get_name as get_name_yash
-from felix import get_name as get_name_felix
 
-def team_names():
-  print("This is Team Bike to the Future. We are:")
+import felix
+import elli
+import yash
 
-elli_name = get_name_elli()
-yash_name = get_name_yash()
-felix_name = get_name_felix()
+e = elli.get_name()
+f = felix.get_name()
+y = yash.get_name()
 
-print(f" - {elli_name}")
-print(f" - {yash_name}")
-print(f" - {felix_name}")
+def team_names ():
+  return f"This is Team Bike to the Future. We are: {f}, {e}, {y}"
 
 if __name__ == "__main__":
-
-  team_names()
+  team_name = team_names()
+  print(team_name)
