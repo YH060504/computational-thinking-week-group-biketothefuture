@@ -9,7 +9,3 @@ def solution_station_2(date_string):
     date_obj = datetime.date(year, month, day)
 
     return days[date_obj.weekday()]
-
-
-# Test the function
-print(solution_station_2('2024-07-10'))

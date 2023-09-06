@@ -16,7 +16,3 @@ def solution_station_4(x):
             i += 2
 
     return output
-
-
-x = 61
-print(solution_station_4(x))

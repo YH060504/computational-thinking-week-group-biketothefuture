@@ -17,8 +17,3 @@ def solution_station_5(name):
     for group, names_in_group in groups.items():
         if name in names_in_group:
             return group
-        
-
-name_to_find = "Sofia"
-result = solution_station_5(name_to_find)
-print(result)

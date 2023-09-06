@@ -9,8 +9,4 @@ e = 0.5
 
 def solution_station_7(expression):
     output = eval(expression)
-    return output
-
-
-print(solution_station_7("c + d + e + b"))
-print(solution_station_7("e+b*c"))
+    return float(output)

@@ -3,6 +3,3 @@ def solution_station_1(n):
     for _ in range(n):
         a, b = b, a + b
     return a
-
-
-print(solution_station_1(10))
