@@ -6,11 +6,4 @@ d = 7
 e = 0.5
 
 def solution_station_7(a, b, c, d, e):
-  if expression == "b+d":
-    
-
-
-number = 57217
-print (solution_station_3(number))
-number = 75212
-print (solution_station_3(number))
+  if 
