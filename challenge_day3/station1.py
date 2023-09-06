@@ -5,4 +5,5 @@ def fibonacci_loop(n):
     return a
 
 
-print(fibonacci_loop(50))
+print(fibonacci_loop(97))
+y = -0.44244x ^ 2 + 1.38977x + -0.09633
