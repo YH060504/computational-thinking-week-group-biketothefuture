@@ -8,7 +8,9 @@ def solution_station_1(n):
     else:
         return solution_station_1(n - 1) + solution_station_1(n - 2)
 
-n = int(input("Enter the value of n: "))
-result = solution_station_1(n)
-print(f"The {n}th term of the Fibonacci sequence is: {result}")
+n = 97
+result = solution_station_1(n) 
+print(solution_station_1(n))
+
+
 
