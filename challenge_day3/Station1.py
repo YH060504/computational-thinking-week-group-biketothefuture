@@ -10,7 +10,4 @@ def solution_station_1(n):
 
 n = 97
 result = solution_station_1(n) 
-print(solution_station_1(n))
-
-
-
+print(f"The {n}th term of the Fibonacci sequence is: {result}")
