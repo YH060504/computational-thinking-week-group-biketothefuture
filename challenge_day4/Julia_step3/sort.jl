@@ -4,6 +4,7 @@ using DataFrames, CSV, Statistics, DelimitedFiles
 people_df = CSV.File("data3.csv") |> DataFrame
 
 # Function to classify a score based on quartiles
+# List start from 0 so make changes to make sure it starts from 0
 function classify_score(score, quartiles)
     if score <= quartiles[1]
         return "low"
@@ -32,12 +33,13 @@ for col_name in names(people_df)[2:end]
     quartiles = quantile(valid_data, [0.25, 0.5, 0.75])
 
     # Replace values with categories or 'low' if they are Float64
-    new_col = map(x -> x isa Float64 ? "low" : classification_score(x, quartiles), col_data)
+    new_col = map(x -> x isa Float64 ? "low" : classify_score(x, quartiles), col_data)
     people_df[!, col_name] = new_col
 end
 
 # Save the modified DataFrame back to a new CSV file
-CSV.write("data4.txt", people_df)
-
+# Making sure we save it to a CSV file not a TXT file
+CSV.write("data4.CSV", people_df)
+CSV.write("data4.txt", people_df, delim='\t')
 # Save the modified DataFrame back to a new TXT file
 #writedlm("data4.txt", people_df, ',')
