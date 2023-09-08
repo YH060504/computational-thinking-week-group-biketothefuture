@@ -40,6 +40,6 @@ end
 # Save the modified DataFrame back to a new CSV file
 # Making sure we save it to a CSV file not a TXT file
 CSV.write("data4.CSV", people_df)
-CSV.write("data4.txt", people_df, delim='\t')
+CSV.write("data4.txt", people_df, delim=',')
 # Save the modified DataFrame back to a new TXT file
 #writedlm("data4.txt", people_df, ',')
